@@ -1,0 +1,13 @@
+
+#LogInDiv {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	width: 500px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#LogInTitle {
+	background-color: #90EE90;
+}
