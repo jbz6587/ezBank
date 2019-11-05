@@ -1,6 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  Button,
+  ButtonToobar,
+  Navbar,
+  Nav,
+  Form,
+  FormControl,
+  Modal,
+  Badge
+} from 'react-bootstrap';
+import {
+  Browser as Router,
+  Switch,
+  Route,
+  History,
+  Link
+} from 'react-router-dom';
+
+import Login from './views/login'
+import Home from './views/home';
+
 
 function App() {
   return (
