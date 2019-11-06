@@ -4,10 +4,31 @@
 	border-width: 1px;
 	border-color: black;
 	width: 500px;
+	height: 300px;
 	margin: auto;
 	margin-top: 100px;
 }
 
 #LogInTitle {
 	background-color: #90EE90;
+}
+
+#LogInButton {
+	margin-top: 10px;
+}
+
+label {
+	display: inline-block;
+	text-align: right;
+	width: 100px;
+}
+
+button {
+	background-color: #90EE90;
+	border-radius: 5px;
+	width: 50%;
+}
+
+.LogInFormElement {
+	width: 50%;
 }
