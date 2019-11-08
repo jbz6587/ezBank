@@ -1,0 +1,14 @@
+
+#instructions {
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	margin: 20px auto 5px auto;
+	padding: 10px;
+	width: 700px;
+}
+
+label {
+	width: auto;
+}
