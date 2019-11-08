@@ -1,0 +1,25 @@
+#accountDiv{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #90EE90;
+	width: 96%;
+	height: 200px;
+	margin: auto;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 25px;
+}
+
+#accountsTitle{
+	text-align: left;
+}
+
+button {
+	background-color: #90EE90;
+	border-radius: 10px;
+	width: 100px;
+}
+
+hr{
+	color : #90EE90;
+}

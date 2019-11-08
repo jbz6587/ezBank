@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
 import {
   Button,
   ButtonToobar,
@@ -12,7 +11,6 @@ import {
   Modal,
   Badge
 } from 'react-bootstrap';
-
 import {
   Browser as Router,
   Switch,
