@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import '../css/login.css';
 
 
@@ -21,9 +22,9 @@ export default class Login extends Component {
 				</form>
 				<button id='RegisterButton'>Register</button>
 				<br/>
-				<a>Recover Username/Password</a>
+				<Link to='/pwrecovery'>Recover Username/Password</Link>
 			</div>
-			<div><a>Contact Us</a></div>
+			<Link to='/contact'>Contact Us</Link>
 		</div>
 		
 		
