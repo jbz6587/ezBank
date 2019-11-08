@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import '../css/login.css';
 
 
@@ -23,7 +24,7 @@ export default class Login extends Component {
 				<br/>
 				<a>Recover Username/Password</a>
 			</div>
-			<div><a>Contact Us</a></div>
+			<Link to='/pwrecovery'>Contact Us</Link>
 		</div>
 		
 		
