@@ -36,6 +36,7 @@ function App() {
 				<Router>
 					<Route exact path="/" component={Login}/>
 					<Route path="/pwrecovery" component={PWRecovery}/>
+					<Route path="/contact" component={Contact}/>
 				</Router>
 			</div>
 		</div>

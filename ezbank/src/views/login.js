@@ -22,9 +22,9 @@ export default class Login extends Component {
 				</form>
 				<button id='RegisterButton'>Register</button>
 				<br/>
-				<a>Recover Username/Password</a>
+				<Link to='/pwrecovery'>Recover Username/Password</Link>
 			</div>
-			<Link to='/pwrecovery'>Contact Us</Link>
+			<Link to='/contact'>Contact Us</Link>
 		</div>
 		
 		
