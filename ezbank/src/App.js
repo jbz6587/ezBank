@@ -23,7 +23,8 @@ import Login from './views/login';
 import Home from './views/home';
 import Contact from './views/contact';
 import Register from './views/register';
-import PWRecovery from './views/pwrecovery'
+import PWRecovery from './views/pwrecovery';
+import Transfer from './views/transfer';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
 					<Route path="/contact" component={Contact}/>
 					<Route path="/home" component={Home}/>
 					<Route path="/register" component={Register}/>
+					<Route path="/transfer" component={Transfer}/>
 				</Router>
 			</div>
 		</div>
