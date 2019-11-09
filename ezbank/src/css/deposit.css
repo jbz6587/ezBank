@@ -1,0 +1,37 @@
+#depositContainer {
+	float: left;
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+
+#sectionHeader {
+	text-decoration: underline;
+}
+
+#accountDropdown {
+	height: 30px;
+	width: 250px;
+}
+
+#depositAmountInput {
+	height: 20px;
+	width: 250px;
+}
+
+#depositItemNote {
+	font-size: 14px;
+	font-weight: 500;
+	opacity: .7;
+}
+
+.imagePlaceholder{
+	height: 50px;
+  	width: 100px;
+  	border-style: solid;
+	border-width: 1px;
+	border-radius: 8%;
+	border-color: black;
+	font-size: 12px;
+}
