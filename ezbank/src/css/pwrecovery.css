@@ -9,6 +9,33 @@
 	width: 700px;
 }
 
+#inputsDiv {
+	margin-left: 30%;
+	margin-right: 25%;
+	margin-bottom: 50px;
+}
+
+#RecoveryField {
+	margin-top: 10px;
+}
+
+#messageDiv {
+	margin-left: 30%;
+	margin-right: 25%;
+}
+
+#pwRecoveryBtn {
+	float: left;
+	margin-left: 30px;
+}
+
 label {
-	width: auto;
+	width: 111px;
+	float: left;
+	text-align: left;
+	margin-right: 20px;
+}
+
+input {
+	float: left;
 }
