@@ -1,55 +1,55 @@
 import React, { Component } from 'react';
+import '../css/register.css';
 
 export default class Register extends Component {
 	
 	render() {
 		return(
 			<div>
-			<div>
-				<h2>Registration</h2>
-			</div>
-			<div>
-				<h3>Please fill out the following form</h3>
-				<h4>Items marked with an asterisk* are required</h4>
-			</div>
-			<form id= 'registerForm'>
-				<div>
-					<label>Name*:</label> <input className='' type="name"/>
+				<div id = "registerHeader">
+					<div>
+						<h2>Registration</h2>
+					</div>
+					<div>
+						<h3>Please fill out the following form</h3>
+						<h4>Items marked with an asterisk* are required</h4>
+					</div>
+					<br/>
 				</div>
-				<div>
-					<label>Email*:</label> <input className='' type="email"/>
-					<label>ConfirmEmail*:</label> <input className='' type="emailConfirm"/>
+				<div id= "registerForm">
+					<form>
+						<div>
+							<span class = "formLeft">
+								<label>Name*:</label> <input type="name"/><br/>
+								<label>Email*:</label> <input type="email"/><br/>
+								<label>Password*:</label> <input type="password"/><br/>
+								<label>Date of Birth:</label> <input type="DoB"/><br/>
+								<label>HomeAddress*:</label> <input type="address"/><br/>
+								<label>Country*: </label>
+								<select id = "registerDropdown">
+			  						<option value="us">United States</option>
+			 						<option value="ca">Canada</option>
+			 						<option value="mx">Mexico</option>
+								</select>
+							</span>
+							<span class = "formRight">
+								<br/><label>ConfirmEmail*:</label> <input type="emailConfirm"/><br/>
+								<label>ConfirmPassword*:</label> <input type="passwordConfirm"/><br/>
+								<label>PhoneNumber*:</label> <input type="phone"/><br/>
+								<label>Zip*:</label> <input type="zip"/><br/>
+								<label>State/Territory: </label>
+								<select id = "registerDropdown">
+			  						<option value="ny">NY</option>
+			 						<option value="mn">MN</option>
+			 						<option value="pa">PA</option>
+								</select>
+							</span>
+						</div>
+						<div>
+							<br/><button>Register</button>
+						</div>
+					</form>
 				</div>
-				<div>
-					<label>Password*:</label> <input className='' type="password"/>
-					<label>ConfirmPassword*:</label> <input className='' type="passwordConfirm"/>
-				</div>
-				<div>
-					<label>Date of Birth:</label> <input className='' type="DoB"/>
-					<label>PhoneNumber*:</label> <input className='' type="phone"/>
-				</div>
-				<div>
-					<label>HomeAddress*:</label> <input className='' type="address"/>
-					<label>Zip*:</label> <input className='' type="zip"/>
-				</div>
-				<div>
-					<label>Country:</label>
-					<select>
-  						<option value="us">United States</option>
- 						<option value="ca">Canada</option>
- 						<option value="mx">Mexico</option>
-					</select>
-					<label>State/Territory:</label>
-					<select>
-  						<option value="ny">NY</option>
- 						<option value="mn">MN</option>
- 						<option value="pa">PA</option>
-					</select>
-				</div>
-				<div>
-					<input type="submit" value="Submit"></input>
-				</div>
-			</form>
 			</div>
 
 		)

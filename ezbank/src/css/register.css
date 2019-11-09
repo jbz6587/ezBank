@@ -1,0 +1,30 @@
+#registerHeader{
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#registerForm{
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 800px;
+}
+
+#registerDropdown{
+	height: 25px;
+	width: 160px;
+}
+
+span.formLeft{
+	display: inline-block;
+	text-align: right;
+	margin-right: 20px;
+	height: 120px;
+}
+
+span.formRight{
+	display: inline-block;
+	text-align: right;
+	height: 120px;
+}
