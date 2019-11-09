@@ -35,6 +35,7 @@ function App() {
 					<Route exact path="/" component={Login}/>
 					<Route path="/pwrecovery" component={PWRecovery}/>
 					<Route path="/contact" component={Contact}/>
+					<Route path="/home" component={Home}/>
 				</Router>
 			</div>
 		</div>

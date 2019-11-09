@@ -17,15 +17,13 @@
 	margin-top: 10px;
 }
 
-label {
+.Login * label {
 	display: inline-block;
 	text-align: right;
 	width: 100px;
 }
 
-button {
-	background-color: #90EE90;
-	border-radius: 5px;
+.Login * button {
 	width: 50%;
 }
 

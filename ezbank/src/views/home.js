@@ -21,7 +21,7 @@ export default class Home extends Component {
 
 	render() {
 	return(
-		<div>
+		<div className='Home'>
 			<Navbar bg="dark" variant="dark">
 	   		<Navbar.Brand href="/">eZ-Bank</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />

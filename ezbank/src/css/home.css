@@ -14,12 +14,10 @@
 	text-align: left;
 }
 
-button {
-	background-color: #90EE90;
-	border-radius: 10px;
+.Home * button {
 	width: 100px;
 }
 
-hr{
+.Home * hr{
 	color : #90EE90;
 }

@@ -29,7 +29,7 @@ export default class PWRecovery extends Component {
 	
 	render() {
 		return(
-		<div>
+		<div className='PWRecovery'>
 			<div id="instructions">
 				<b>Password Recovery Page</b>
 				<br/>
