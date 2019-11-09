@@ -23,8 +23,6 @@ export default class PWRecovery extends Component {
 		else {
 			document.getElementById("RecoveryField").innerHTML = "";
 		}
-		
-		console.log("Radio button was clicked");
 	}
 	
 	render() {
