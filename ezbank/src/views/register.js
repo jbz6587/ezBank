@@ -21,11 +21,11 @@ export default class Register extends Component {
 						<div>
 							<span class = "formLeft">
 								<label>Name*:</label> <input type="name"/><br/>
-								<label>Email*:</label> <input type="email"/><br/>
-								<label>Password*:</label> <input type="password"/><br/>
-								<label>Date of Birth:</label> <input type="DoB"/><br/>
-								<label>HomeAddress*:</label> <input type="address"/><br/>
-								<label>Country*: </label>
+								<br/><label>Email*:</label> <input type="email"/><br/>
+								<br/><label>Password*:</label> <input type="password"/><br/>
+								<br/><label>Date of Birth:</label> <input type="DoB"/><br/>
+								<br/><label>HomeAddress*:</label> <input type="address"/><br/>
+								<br/><label>Country*: </label>
 								<select id = "registerDropdown">
 			  						<option value="us">United States</option>
 			 						<option value="ca">Canada</option>
@@ -34,10 +34,10 @@ export default class Register extends Component {
 							</span>
 							<span class = "formRight">
 								<br/><label>ConfirmEmail*:</label> <input type="emailConfirm"/><br/>
-								<label>ConfirmPassword*:</label> <input type="passwordConfirm"/><br/>
-								<label>PhoneNumber*:</label> <input type="phone"/><br/>
-								<label>Zip*:</label> <input type="zip"/><br/>
-								<label>State/Territory: </label>
+								<br/><label>ConfirmPassword*:</label> <input type="passwordConfirm"/><br/>
+								<br/><label>PhoneNumber*:</label> <input type="phone"/><br/>
+								<br/><label>Zip*:</label> <input type="zip"/><br/>
+								<br/><label>State/Territory: </label>
 								<select id = "registerDropdown">
 			  						<option value="ny">NY</option>
 			 						<option value="mn">MN</option>
