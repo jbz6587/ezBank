@@ -5,6 +5,17 @@ import '../css/login.css';
 
 export default class Login extends Component {
 	
+	displayCapsLockWarning = (e) => {
+		var errorDiv = document.getElementById("errorDiv");
+		if(e.getModifierState("CapsLock")){
+			
+			errorDiv.innerHTML = "Warning: CapsLock is enabled.";
+		}
+		else{
+			errorDiv.innerHTML = "";
+		}
+	}
+	
 	render() {
 		return(
 		<div className='Login'>
@@ -15,8 +26,9 @@ export default class Login extends Component {
 						<label>Email:</label> <input className='LogInFormElement' type="email" required/>
 					</div>
 					<div className="block">
-						<label>Password:</label> <input className='LogInFormElement' type="password" required/>
+						<label>Password:</label> <input className='LogInFormElement' type="password" onKeyUp={this.displayCapsLockWarning} required/>
 					</div>
+					<div id="errorDiv"></div>
 					<button id='LogInButton'>Log In</button>
 					<br/>
 				</form>

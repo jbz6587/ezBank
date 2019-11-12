@@ -17,6 +17,10 @@
 	margin-top: 10px;
 }
 
+#errorDiv {
+	color: red;
+}
+
 .Login * label {
 	display: inline-block;
 	text-align: right;
