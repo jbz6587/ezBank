@@ -1,22 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {
-  Button,
-  ButtonToobar,
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-  Modal,
-  Badge
-} from 'react-bootstrap';
-import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  History,
-  Link
+  Route
 } from 'react-router-dom';
 
 import Login from './views/login';

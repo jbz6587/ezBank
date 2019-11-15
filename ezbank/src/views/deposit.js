@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../css/deposit.css';
-
+import SiteNavbar from '../views/sitenavbar.js';
 
 export default class Deposit extends Component {
 
 	render(){
 		return(
 			<div id="depositContainer">
+				<SiteNavbar/>
 				<div>
 					<h2>Electronic Check Deposit</h2>
 				</div>

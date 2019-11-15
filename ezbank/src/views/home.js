@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import App from '.././App.js'
 import '../css/home.css';
-import {
-  Navbar,
-  Nav,
-} from 'react-bootstrap';
-
+import SiteNavbar from '../views/sitenavbar.js';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -22,19 +17,7 @@ export default class Home extends Component {
 	render() {
 	return(
 		<div className='Home'>
-			<Navbar bg="dark" variant="dark">
-	   		<Navbar.Brand href="/">eZ-Bank</Navbar.Brand>
-			<Navbar.Toggle aria-controls="basic-navbar-nav" />
-	    	<Navbar.Collapse id="basic-navbar-nav">
-		    	<Nav className="mr-auto">
-		    		<Nav.Link href="/">Home</Nav.Link>
-		    		<Nav.Link href="/transfer">Transfer</Nav.Link>
-		    		<Nav.Link href="/deposit">Deposit</Nav.Link>
-		    		<Nav.Link href="/help">Help</Nav.Link>
-		    		<Nav.Link href="/profile">Profile/Settings</Nav.Link>
-		    	</Nav>
-	    	</Navbar.Collapse>
-	    	</Navbar>
+			<SiteNavbar/>
 		<h1>Welcome {this.state.user}</h1>
 		<hr/>
 		<h2 id="accountsTitle">Accounts:</h2>
