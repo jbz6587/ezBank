@@ -23,7 +23,9 @@ export default class Transfer extends Component {
 					<SiteNavbar/>
 				</div>
 				<div className='Transfer'>
-					<h3>Make Transfer</h3>
+					<div>
+						<h2>Make Transfer</h2>
+					</div>
 					<div>
 						<b><u>Select Accounts:</u></b>
 						<button id="scheduleTransferBtn">Schedule Transfers</button>
@@ -35,17 +37,17 @@ export default class Transfer extends Component {
 						<select id="transferFromAcctSel" className="transferFormElement">
 							<option value="">-- Select Account --</option>
 						</select>
-						<br/>
+						<br/><br/>
 						<label>To:</label>
 						<br/>
 						<select id="transferToAcctSel" className="transferFormElement">
 							<option value="">-- Select Account --</option>
 						</select>
-						<br/>
+						<br/><br/>
 						<label>Amount:</label>
 						<br/>
 						<input id="transferAmt" className="transferFormElement" type="number" step="0.01" min="0.00" required></input>
-						<br/>
+						<br/><br/>
 						<button id="confirmTransferBtn">Confirm</button>
 						<button id="cancelTransferBtn">Cancel</button>
 					</form>
