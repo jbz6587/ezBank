@@ -7,8 +7,11 @@ export default class Deposit extends Component {
 
 	render(){
 		return(
+			<div>
+				<div id="navBar">
+					<SiteNavbar/>
+				</div>
 			<div id="depositContainer">
-				<SiteNavbar/>
 				<div>
 					<h2>Electronic Check Deposit</h2>
 				</div>
@@ -41,6 +44,7 @@ export default class Deposit extends Component {
 						<button type="button">Cancel</button>
 					</div>
 				</form>
+			</div>
 			</div>
 
 			)

@@ -12,7 +12,7 @@ export default class SiteNavbar extends Component {
 		return(
 			<div id="NavbarContainer">
 				<Navbar bg="dark" variant="dark">
-					<Navbar.Brand className="navLogo" href="/">eZ-Bank</Navbar.Brand>
+					<Navbar.Brand className="navLogo" href="/home">eZ-Bank</Navbar.Brand>
 					<Nav className="mr-auto">
 						<Nav.Link className="navLink" href="/home">Home</Nav.Link>
 						<Nav.Link className="navLink" href="/transfer">Transfer</Nav.Link>

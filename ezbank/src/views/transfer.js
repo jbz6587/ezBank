@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../css/transfer.css';
+import SiteNavbar from '../views/sitenavbar.js';
 
 export default class Transfer extends Component {
 	
@@ -17,34 +18,39 @@ export default class Transfer extends Component {
 	
 	render() {
 		return(
-		<div className='Transfer'>
-			<h3>Make Transfer</h3>
 			<div>
-				<b><u>Select Accounts:</u></b>
-				<button id="scheduleTransferBtn">Schedule Transfers</button>
+				<div id="navBar">
+					<SiteNavbar/>
+				</div>
+				<div className='Transfer'>
+					<h3>Make Transfer</h3>
+					<div>
+						<b><u>Select Accounts:</u></b>
+						<button id="scheduleTransferBtn">Schedule Transfers</button>
+					</div>
+					<br/>
+					<form id="transferForm">
+						<label>From:</label>
+						<br/>
+						<select id="transferFromAcctSel" className="transferFormElement">
+							<option value="">-- Select Account --</option>
+						</select>
+						<br/>
+						<label>To:</label>
+						<br/>
+						<select id="transferToAcctSel" className="transferFormElement">
+							<option value="">-- Select Account --</option>
+						</select>
+						<br/>
+						<label>Amount:</label>
+						<br/>
+						<input id="transferAmt" className="transferFormElement" type="number" step="0.01" min="0.00" required></input>
+						<br/>
+						<button id="confirmTransferBtn">Confirm</button>
+						<button id="cancelTransferBtn">Cancel</button>
+					</form>
+				</div>
 			</div>
-			<br/>
-			<form id="transferForm">
-				<label>From:</label>
-				<br/>
-				<select id="transferFromAcctSel" className="transferFormElement">
-					<option value="">-- Select Account --</option>
-				</select>
-				<br/>
-				<label>To:</label>
-				<br/>
-				<select id="transferToAcctSel" className="transferFormElement">
-					<option value="">-- Select Account --</option>
-				</select>
-				<br/>
-				<label>Amount:</label>
-				<br/>
-				<input id="transferAmt" className="transferFormElement" type="number" step="0.01" min="0.00" required></input>
-				<br/>
-				<button id="confirmTransferBtn">Confirm</button>
-				<button id="cancelTransferBtn">Cancel</button>
-			</form>
-		</div>
 		)
 	}
 	
