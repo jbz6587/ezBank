@@ -50,6 +50,7 @@ export default class Deposit extends Component {
 							<br/>
 							<div>
 								<span id="uploaderL">
+									<label>Front:</label><br/>
 									<ImageUploader
 										className="imageUploader"
 										label="Max file size: 10mb, accepted: jpg, png"
@@ -57,10 +58,13 @@ export default class Deposit extends Component {
 						                buttonText='Choose image'
 						                onChange={this.onDrop}
 						                imgExtension={['.jpg', '.png']}
+						                withPreview="true"
+						                singleImage="true"
 						                maxFileSize={10485760}
 						            />
 					            </span>
 						            <span id="uploaderR">
+						            <label>Back:</label><br/>
 						            <ImageUploader
 						            	className="imageUploader"
 										label="Max file size: 10mb, accepted: jpg, png"
@@ -68,6 +72,8 @@ export default class Deposit extends Component {
 						                buttonText='Choose image'
 						                onChange={this.onDrop}
 						                imgExtension={['.jpg', '.png']}
+						                withPreview="true"
+						                singleImage="true"
 						                maxFileSize={10485760}
 						            />
 					            </span>

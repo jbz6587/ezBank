@@ -18,7 +18,17 @@
 }
 
 .imageUploader {
-	height: 30px;	
+	height: 100px;
+}
+
+.uploadPicturesWrapper {
+	height: 200px;
+	width: 300px;
+}
+
+.fileContainer {
+	height: 120px;
+	width: 300px;
 }
 
 #uploaderL, #uploaderR {
@@ -28,16 +38,4 @@
 
 .chooseFileButton {
 	height: auto;
-}
-
-.imagePlaceholder{
-	margin-left: 10px;
-	float: left;
-	height: 80px;
-  	width: 200px;
-  	border-style: solid;
-	border-width: 1px;
-	border-radius: 6%;
-	border-color: black;
-	font-size: 12px;
 }
