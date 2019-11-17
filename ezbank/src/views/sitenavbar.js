@@ -19,7 +19,7 @@ export default class SiteNavbar extends Component {
 						<Nav.Link className="navLink" href="/deposit">Deposit</Nav.Link>
 						<Nav.Link className="navLink" href="/help">Help</Nav.Link>
 						<Nav.Link className="navLink" href="/contact">Contact Us</Nav.Link>
-						<Nav.Link className="navLink" href="/profile">Profile/Settings</Nav.Link>
+						<Nav.Link className="navLink" href="/profilesettings">Profile/Settings</Nav.Link>
 						<a id="logoutButton" href="/">log out</a>
 					</Nav>
 
