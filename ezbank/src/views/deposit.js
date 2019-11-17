@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import '../css/deposit.css';
 import SiteNavbar from '../views/sitenavbar.js';
 import ImageUploader from 'react-images-upload';

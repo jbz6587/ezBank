@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import SiteNavbar from '../views/sitenavbar.js';
 import LandingNavbar from '../views/landingnavbar.js';
 import '../css/contact.css';
 
 export default class Contact extends Component {
 	
+	renderNav = () => {
+		if(this.props.location.state !== undefined){
+			return <LandingNavbar/>;
+		}
+		else {
+			return <SiteNavbar/>;
+		}
+	}
+	
 	render() {
 		return(
 		<div>
-			<div>
-				<LandingNavbar/>
+			<div id="contactNavBarDiv">
+				{this.renderNav()}
 			</div>
 			<div id='contactContainer'>
 				<h2 id='ConctactTitle'>Contact Information</h2>
