@@ -75,6 +75,7 @@ export default class Deposit extends Component {
 							
 						</div>
 						<div>
+							<br/><br/><br/><br/><br/><br/>
 							<button type="button">Submit</button>
 							<button type="button">Cancel</button>
 						</div>
