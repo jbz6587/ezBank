@@ -31,7 +31,7 @@ function App() {
 					<Route path="/transfer" component={Transfer}/>
 					<Route path="/deposit" component={Deposit}/>
 					<Route path="/help" component={Help}/>
-          <Route path="/profilesettings" component={ProfileSettings}/>
+          			<Route path="/profilesettings" component={ProfileSettings}/>
 					<Route path="/create-support-ticket" component={CreateTicket}/>
 				</Router>
 			</div>
