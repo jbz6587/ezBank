@@ -13,6 +13,7 @@ import PWRecovery from './views/pwrecovery';
 import Transfer from './views/transfer';
 import Deposit from './views/deposit';
 import Help from './views/help';
+import ProfileSettings from './views/profilesettings';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 					<Route path="/transfer" component={Transfer}/>
 					<Route path="/deposit" component={Deposit}/>
 					<Route path="/help" component={Help}/>
+          <Route path="/profilesettings" component={ProfileSettings}/>
 				</Router>
 			</div>
 		</div>
