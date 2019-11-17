@@ -14,6 +14,7 @@ import Transfer from './views/transfer';
 import Deposit from './views/deposit';
 import Help from './views/help';
 import ProfileSettings from './views/profilesettings';
+import CreateTicket from './views/createsupportticket';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
 					<Route path="/deposit" component={Deposit}/>
 					<Route path="/help" component={Help}/>
           <Route path="/profilesettings" component={ProfileSettings}/>
+					<Route path="/create-support-ticket" component={CreateTicket}/>
 				</Router>
 			</div>
 		</div>
