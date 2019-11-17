@@ -33,10 +33,6 @@ export default class ProfileSettings extends Component {
 						<hr id="divideLine"/>
 					</div>
 					<div id= "settingsContainer">
-						<div>
-							<h3>Personalization:</h3>
-							<p>stuff</p>
-						</div>
 						<div id="notifContainer">
 							<h3>Notifications:</h3>
 							<span className= "SettingsLabels">
@@ -59,6 +55,7 @@ export default class ProfileSettings extends Component {
 						<div id="securityContainer">
 							<h3>Security:</h3>
 							<div>
+								<span className="SecrurityItems">
 								<div>
 									<p>2-Factor Authentication</p>
 										<input type="checkbox" value="phoneNotifs1"/>Phone: ***-6789<br/>
@@ -68,6 +65,8 @@ export default class ProfileSettings extends Component {
 									<p>Fingerprint Scanner</p>
 									<input type="checkbox" value="phoneNotifs1"/>Fingerprint1<br/>
 								</div>
+								</span>
+								<button id="securityButton">Change Security Options</button><p id="instruction"> *requires password to be entered</p>
 							</div>
 						</div>
 						<div>
