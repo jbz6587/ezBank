@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import '../css/register.css';
+import LandingNavbar from '../views/landingnavbar.js';
+
 
 export default class Register extends Component {
 	
 	render() {
 		return(
 			<div>
+			<div>
+				<LandingNavbar/>
+			</div>
 				<div id = "registerHeader">
 					<div>
 						<h2>Registration</h2>

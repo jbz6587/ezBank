@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import LandingNavbar from '../views/landingnavbar.js';
 
 export default class Contact extends Component {
 	
 	render() {
 		return(
 		<div>
+			<div>
+				<LandingNavbar/>
+			</div>
 			<div id='ContactDiv'>
 				<h2 id='ConctactTitle'>Contact Information</h2>
 				<div>
