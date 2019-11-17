@@ -19,7 +19,7 @@ export default class Home extends Component {
 	}
 
 	showDetails1(){
-		if(this.state.accounts.account1.details == 'hide'){
+		if(this.state.accounts.account1.details === 'hide'){
 			let statusCopy = Object.assign({}, this.state);
 			statusCopy.accounts['account1'].details = 'show';
 			this.setState(statusCopy);
@@ -31,7 +31,7 @@ export default class Home extends Component {
 	}
 
 	showDetails2(){
-		if(this.state.accounts.account2.details == 'hide'){
+		if(this.state.accounts.account2.details === 'hide'){
 			let statusCopy = Object.assign({}, this.state);
 			statusCopy.accounts['account2'].details = 'show';
 			this.setState(statusCopy);
@@ -58,7 +58,7 @@ export default class Home extends Component {
 				<button type="button" onClick={this.showDetails1}>Details</button>
 
 
-				{this.state.accounts.account1.details == 'show' &&
+				{this.state.accounts.account1.details === 'show' &&
 					<div>
 						<br/>
 						<b>Account Number :</b> {this.state.accounts.account1.accountid}<br/>
@@ -80,7 +80,7 @@ export default class Home extends Component {
 				<br/>
 				<button type="button" onClick={this.showDetails2}>Details</button>
 
-				{this.state.accounts.account2.details == 'show' &&
+				{this.state.accounts.account2.details === 'show' &&
 					<div>
 						<br/>
 						<b>Account Number :</b> {this.state.accounts.account2.accountid}<br/>

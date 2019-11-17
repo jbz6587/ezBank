@@ -41,7 +41,7 @@ export default class Login extends Component {
 					<br/>
 					<Link to='/pwrecovery'>Recover Username/Password</Link>
 				</div>
-				<Link to='/contact'>Contact Us</Link>
+				<Link to={{pathname: '/contact', state: {useReducedNav: true}}}>Contact Us</Link>
 			</div>
 		</div>
 		)
