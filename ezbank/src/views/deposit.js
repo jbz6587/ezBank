@@ -2,8 +2,21 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../css/deposit.css';
 import SiteNavbar from '../views/sitenavbar.js';
+import ImageUploader from 'react-images-upload';
 
 export default class Deposit extends Component {
+
+	constructor(props) {
+        super(props);
+         this.state = { pictures: [] };
+         this.onDrop = this.onDrop.bind(this);
+    }
+ 
+    onDrop(picture) {
+        this.setState({
+            pictures: this.state.pictures.concat(picture),
+        });
+    }
 
 	render(){
 		return(
@@ -35,11 +48,33 @@ export default class Deposit extends Component {
 							<br/>
 							<b>Upload Images</b>
 							<br/>
-							<div class= "imagePlaceholder">image1</div>
-							<div class= "imagePlaceholder">image2</div>
+							<div>
+								<span id="uploaderL">
+									<ImageUploader
+										className="imageUploader"
+										label="Max file size: 10mb, accepted: jpg, png"
+						                withIcon={true}
+						                buttonText='Choose image'
+						                onChange={this.onDrop}
+						                imgExtension={['.jpg', '.png']}
+						                maxFileSize={10485760}
+						            />
+					            </span>
+						            <span id="uploaderR">
+						            <ImageUploader
+						            	className="imageUploader"
+										label="Max file size: 10mb, accepted: jpg, png"
+						                withIcon={true}
+						                buttonText='Choose image'
+						                onChange={this.onDrop}
+						                imgExtension={['.jpg', '.png']}
+						                maxFileSize={10485760}
+						            />
+					            </span>
+				            </div>
+							
 						</div>
 						<div>
-							<br/><br/><br/><br/><br/>
 							<button type="button">Submit</button>
 							<button type="button">Cancel</button>
 						</div>

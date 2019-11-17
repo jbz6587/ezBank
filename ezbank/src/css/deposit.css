@@ -17,6 +17,19 @@
 	opacity: .7;
 }
 
+.imageUploader {
+	height: 30px;
+	width: 50%;
+}
+
+span.uploaderL {
+	display: inline-block;
+}
+
+span.uplaoderR {
+	display: inline-block;
+}
+
 .imagePlaceholder{
 	margin-left: 10px;
 	float: left;
