@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../css/pwrecovery.css';
+import LandingNavbar from '../views/landingnavbar.js';
+
 
 export default class PWRecovery extends Component {
 
@@ -28,6 +30,9 @@ export default class PWRecovery extends Component {
 	render() {
 		return(
 		<div className='PWRecovery'>
+			<div>
+				<LandingNavbar/>
+			</div>
 			<div id="instructions">
 				<b>Password Recovery Page</b>
 				<br/>
