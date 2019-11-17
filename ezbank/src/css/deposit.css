@@ -18,16 +18,16 @@
 }
 
 .imageUploader {
-	height: 30px;
+	height: 30px;	
+}
+
+#uploaderL, #uploaderR {
+	display: inline-block;
 	width: 50%;
 }
 
-span.uploaderL {
-	display: inline-block;
-}
-
-span.uplaoderR {
-	display: inline-block;
+.chooseFileButton {
+	height: auto;
 }
 
 .imagePlaceholder{
