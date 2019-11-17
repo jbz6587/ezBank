@@ -1,0 +1,36 @@
+
+#searchDiv {
+	display: inline-flex;
+	margin-bottom: 20px;
+}
+
+#searchBar {
+	width: 300px;
+}
+
+#searchIcon {
+	height: 30px;
+	width: 30px;
+	border: 1px solid;
+	background-color: #90EE90;
+}
+
+.accordion {
+  background-color: #90EE90;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #90B090;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}

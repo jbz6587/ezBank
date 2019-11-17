@@ -12,6 +12,7 @@ import Register from './views/register';
 import PWRecovery from './views/pwrecovery';
 import Transfer from './views/transfer';
 import Deposit from './views/deposit';
+import Help from './views/help';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 					<Route path="/register" component={Register}/>
 					<Route path="/transfer" component={Transfer}/>
 					<Route path="/deposit" component={Deposit}/>
+					<Route path="/help" component={Help}/>
 				</Router>
 			</div>
 		</div>
