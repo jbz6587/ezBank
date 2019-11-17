@@ -13,6 +13,7 @@ import PWRecovery from './views/pwrecovery';
 import Transfer from './views/transfer';
 import Deposit from './views/deposit';
 import Help from './views/help';
+import CreateTicket from './views/createsupportticket';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 					<Route path="/transfer" component={Transfer}/>
 					<Route path="/deposit" component={Deposit}/>
 					<Route path="/help" component={Help}/>
+					<Route path="/create-support-ticket" component={CreateTicket}/>
 				</Router>
 			</div>
 		</div>

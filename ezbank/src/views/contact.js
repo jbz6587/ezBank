@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import LandingNavbar from '../views/landingnavbar.js';
 import '../css/contact.css';
 
@@ -31,7 +32,7 @@ export default class Contact extends Component {
 				 		email support@eZ-Bank.com or submit a help request using the link below.</p>
 				 </div>
 				 <div>
-				 	<button id= "helpButton">Submit Help Request</button>
+				 	<Link to='/create-support-ticket'><button id= "helpButton">Submit Help Request</button></Link>
 				 </div>
 			</div>
 		</div>
