@@ -48,7 +48,7 @@ export default class Home extends Component {
 			<SiteNavbar/>
 		<h1>Welcome {this.state.user}</h1>
 		<hr/>
-		<h2 id="accountsTitle">Accounts:</h2>
+		<h2 id="accountsTitle">Accounts :</h2>
 		<div id="accountDiv" className="block">
 			<h3 id="accountTitle"> {this.state.accounts.account1.type} Account</h3>
 			<div>
