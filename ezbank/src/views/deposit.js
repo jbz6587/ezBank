@@ -18,6 +18,29 @@ export default class Deposit extends Component {
         });
     }
 
+	handleDepositFormSubmit = (e) => {
+		e.preventDefault();
+		var form = document.getElementById("depositForm");
+		var errorMessage = "";
+		
+		if(form[3].files.length !== 1){
+			errorMessage += "Error: An image of the front of the check to be deposited was not uploaded. \n ";
+		}
+		
+		if(form[5].files.length !== 1){
+			errorMessage += "Error: An image of the back of the check to be deposited was not uploaded.\n ";
+		}
+		
+		if(errorMessage !== ""){
+			var errorDiv = document.getElementById("DepositErrorDiv");
+			errorDiv.innerText = errorMessage;
+			errorDiv.style.color = "red";
+		}
+		else {
+			window.location.href = "./deposit-complete";
+		}
+	}
+
 	render(){
 		return(
 			<div>
@@ -28,11 +51,13 @@ export default class Deposit extends Component {
 					<div>
 						<h2>Electronic Check Deposit</h2>
 					</div>
-					<form id="depositForm">
+					<div id="DepositErrorDiv">
+					</div>
+					<form id="depositForm" onSubmit={this.handleDepositFormSubmit}>
 						<div>
 							<b><u>Select an account to deposit to:</u></b>
 							<br/>
-							<select className="DepositInputElement">
+							<select id="DepositAccountSelect" className="DepositInputElement">
 	  							<option value="ac1">Account1: $100</option>
 	 							<option value="ac2">Account2: $1000</option>
 	 							<option value="ac3">Account3: $5690</option>
@@ -41,7 +66,7 @@ export default class Deposit extends Component {
 						<div>
 							<br/>
 							<b><u>Enter amount to be deposited:</u></b><br/>
-							<input className="DepositInputElement" type="number" step=".01" min=".01" max="3000.00" required/>
+							<input id="DepositAmountInput" className="DepositInputElement" type="number" step=".01" min=".01" max="3000.00" required/>
 							<label id="depositItemNote">*limit $3000*</label>
 						</div>
 						<div>

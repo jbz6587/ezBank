@@ -23,7 +23,7 @@ export default class Register extends Component {
 		}
 		else{
 			var errorDiv = document.getElementById("RegistrationErrorDiv");
-			errorDiv.innerHTML = errorMessage;
+			errorDiv.innerText = errorMessage;
 			errorDiv.style.color = "red";
 		}
 	}
