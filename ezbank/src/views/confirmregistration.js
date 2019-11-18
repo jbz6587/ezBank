@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import LandingNavbar from '../views/landingnavbar.js';
 import '../css/confirmregistration.css';
 

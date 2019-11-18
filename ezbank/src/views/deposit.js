@@ -41,7 +41,7 @@ export default class Deposit extends Component {
 						<div>
 							<br/>
 							<b><u>Enter amount to be deposited:</u></b><br/>
-							<input className="DepositInputElement"/>
+							<input className="DepositInputElement" type="number" step="1" min="1" max="3000" required/>
 							<label id="depositItemNote">*limit $3000*</label>
 						</div>
 						<div>
@@ -58,8 +58,8 @@ export default class Deposit extends Component {
 						                buttonText='Choose image'
 						                onChange={this.onDrop}
 						                imgExtension={['.jpg', '.png']}
-						                withPreview="true"
-						                singleImage="true"
+						                withPreview={true}
+						                singleImage={true}
 						                maxFileSize={10485760}
 						            />
 					            </span>
@@ -72,8 +72,8 @@ export default class Deposit extends Component {
 						                buttonText='Choose image'
 						                onChange={this.onDrop}
 						                imgExtension={['.jpg', '.png']}
-						                withPreview="true"
-						                singleImage="true"
+						                withPreview={true}
+						                singleImage={true}
 						                maxFileSize={10485760}
 						            />
 					            </span>
