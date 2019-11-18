@@ -30,7 +30,6 @@ export default class Login extends Component {
 	handleSumbit(event){
 		event.preventDefault();
 		if(this.state.email === "admin@ezbank.com" && this.state.password === "admin"){
-			console.log("An admin is logging in");
 			this.props.history.push('/employee-dashboard');
 		}else if(this.state.email === "user@ezbank.com" && this.state.password === "user"){
 			this.props.history.push('/home');

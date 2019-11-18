@@ -8,7 +8,6 @@ export default class LandingNavbar extends Component {
 		return(
 			<div id= "landingnavbarContainer">
 				<a href="/">ez-Bank</a>
-				<a id="logoutButton" href="/">log out</a>
 			</div>
 		)
 	}
