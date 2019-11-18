@@ -15,6 +15,7 @@ import Deposit from './views/deposit';
 import Help from './views/help';
 import ProfileSettings from './views/profilesettings';
 import CreateTicket from './views/createsupportticket';
+import EmployeeDashboard from './views/employeeDashboard';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
 					<Route path="/help" component={Help}/>
           			<Route path="/profilesettings" component={ProfileSettings}/>
 					<Route path="/create-support-ticket" component={CreateTicket}/>
+					<Route path="/employee-dashboard" component={EmployeeDashboard}/>
 				</Router>
 			</div>
 		</div>
