@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/deposit.css';
+import {Link} from 'react-router-dom';
 import SiteNavbar from '../views/sitenavbar.js';
 import ImageUploader from 'react-images-upload';
 
@@ -82,7 +83,7 @@ export default class Deposit extends Component {
 						<div>
 							<br/><br/><br/><br/><br/><br/>
 							<button type="button">Submit</button>
-							<button type="button">Cancel</button>
+							<Link to="./home"><button type="button">Cancel</button></Link>
 						</div>
 					</form>
 				</div>

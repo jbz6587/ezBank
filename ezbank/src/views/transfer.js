@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/transfer.css';
+import {Link} from 'react-router-dom';
 import SiteNavbar from '../views/sitenavbar.js';
 import Scheduler from '../views/scheduler.js';
 
@@ -59,7 +60,7 @@ export default class Transfer extends Component {
 						<input id="transferAmt" className="transferFormElement" type="number" step="0.01" min="0.00" required></input>
 						<br/><br/>
 						<button id="confirmTransferBtn">Confirm</button>
-						<button id="cancelTransferBtn">Cancel</button>
+						<Link to="./home"><button id="cancelTransferBtn">Cancel</button></Link>
 					</form>
 				</div>
 				<div id="schedulerDiv">
