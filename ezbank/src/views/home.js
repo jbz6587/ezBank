@@ -50,7 +50,7 @@ export default class Home extends Component {
 		<hr/>
 		<h2 id="accountsTitle">Accounts:</h2>
 		<div id="accountDiv" className="block">
-			<h3 id="accountTitle"> {this.state.accounts.account1.type}</h3>
+			<h3 id="accountTitle"> {this.state.accounts.account1.type} Account</h3>
 			<div>
 				<h4>Account : {this.state.accounts.account1.accNickName}</h4>
 				Avaliable Balance : ${this.state.accounts.account1.balance}<br/>
@@ -73,7 +73,7 @@ export default class Home extends Component {
 			</div>
 		</div>
 		<div id="accountDiv" className="block">
-			<h3 id="accountTitle"> {this.state.accounts.account2.type} Account  Account Balance : ${this.state.accounts.account2.balance}</h3>
+			<h3 id="accountTitle"> {this.state.accounts.account2.type} Account</h3>
 			<div>
 				<h4>Account : {this.state.accounts.account2.accNickName}</h4>
 				Avaliable Balance : ${this.state.accounts.account2.balance}<br/>
