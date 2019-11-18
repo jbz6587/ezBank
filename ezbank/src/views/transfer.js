@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/transfer.css';
 import SiteNavbar from '../views/sitenavbar.js';
+import Scheduler from '../views/scheduler.js';
 
 export default class Transfer extends Component {
 	
@@ -15,6 +16,16 @@ export default class Transfer extends Component {
 	    };
 	}
 	
+	toggleSchedulerDialog = () => {
+		var dialog = document.getElementById("schedulerDiv");
+		if(dialog.style.display !== "inline-block"){
+			dialog.style.display = "inline-block";
+		}
+		else {
+			dialog.style.display = "none";
+		}
+	}
+	
 	render() {
 		return(
 			<div>
@@ -27,7 +38,7 @@ export default class Transfer extends Component {
 					</div>
 					<div>
 						<b><u>Select Accounts:</u></b>
-						<button id="scheduleTransferBtn">Schedule Transfers</button>
+						<button id="scheduleTransferBtn" onClick={this.toggleSchedulerDialog}>Schedule Transfers</button>
 					</div>
 					<br/>
 					<form id="transferForm">
@@ -50,6 +61,9 @@ export default class Transfer extends Component {
 						<button id="confirmTransferBtn">Confirm</button>
 						<button id="cancelTransferBtn">Cancel</button>
 					</form>
+				</div>
+				<div id="schedulerDiv">
+					<Scheduler/>
 				</div>
 			</div>
 		)
