@@ -2,6 +2,7 @@
 	text-align: left;
 	float: left;
 	margin-left: 50px;
+	position: relative;
 }
 
 #scheduleTransferBtn {
@@ -22,6 +23,22 @@
 
 #transferForm > button {
 	float: left;
+	margin-top: 10px;
+}
+
+#schedulerDiv {
+	float: left;
+	width: 350px;
+	height: 300px;
+	border: 1px solid;
+	display: none;
+	position: absolute;
+	left: 650px;
+	top: 140px;
+	
+}
+
+#cancelTransferBtn {
 	margin-top: 10px;
 }
 
