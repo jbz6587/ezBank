@@ -28,7 +28,7 @@ export default class Deposit extends Component {
 					<div>
 						<h2>Electronic Check Deposit</h2>
 					</div>
-					<form>
+					<form id="depositForm">
 						<div>
 							<b><u>Select an account to deposit to:</u></b>
 							<br/>
@@ -41,7 +41,7 @@ export default class Deposit extends Component {
 						<div>
 							<br/>
 							<b><u>Enter amount to be deposited:</u></b><br/>
-							<input className="DepositInputElement" type="number" step="1" min="1" max="3000" required/>
+							<input className="DepositInputElement" type="number" step=".01" min=".01" max="3000.00" required/>
 							<label id="depositItemNote">*limit $3000*</label>
 						</div>
 						<div>
@@ -82,7 +82,7 @@ export default class Deposit extends Component {
 						</div>
 						<div>
 							<br/><br/><br/><br/><br/><br/>
-							<button type="button">Submit</button>
+							<button>Submit</button>
 							<Link to="./home"><button type="button">Cancel</button></Link>
 						</div>
 					</form>
