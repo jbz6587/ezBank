@@ -50,7 +50,7 @@ export default class Register extends Component {
 					<form id="registerForm" onSubmit={this.handleRegistrationFormSubmit}>
 						<div>
 							<span className="formLeft">
-								<label>Name*:</label> <input id="RegisterNameInput" type="name" required/>
+								<label>Name*:</label> <input id="RegisterNameInput" type="text" required/>
 								<br/>
 								<br/>
 								<label>Email*:</label> <input id="RegisterEmailInput" type="email" required/>
@@ -62,7 +62,7 @@ export default class Register extends Component {
 								<label>Date of Birth:</label> <input id="RegisterDoBInput" type="date"/>
 								<br/>
 								<br/>
-								<label>HomeAddress*:</label> <input id="RegisterAddressInput" type="address" required/>
+								<label>Home Address*:</label> <input id="RegisterAddressInput" required/>
 								<br/>
 								<br/>
 								<label>Country*: </label>
@@ -74,16 +74,16 @@ export default class Register extends Component {
 							</span>
 							<span className="formRight">
 								<br/>
-								<label>ConfirmEmail*:</label> <input id="RegisterConfirmEmailInput" type="emailConfirm" required/>
+								<label>Confirm Email*:</label> <input id="RegisterConfirmEmailInput" type="email" required/>
 								<br/>
 								<br/>
-								<label>ConfirmPassword*:</label> <input id="RegisterConfirmPWInput" type="passwordConfirm" required/>
+								<label>Confirm Password*:</label> <input id="RegisterConfirmPWInput" type="password" required/>
 								<br/>
 								<br/>
-								<label>PhoneNumber*:</label> <input id="RegisterPhoneInput" type="phone" required/>
+								<label>Phone Number*:</label> <input id="RegisterPhoneInput" required/>
 								<br/>
 								<br/>
-								<label>Zip*:</label> <input id="RegisterZipInput" type="zip" required/>
+								<label>Zip*:</label> <input id="RegisterZipInput" required/>
 								<br/>
 								<br/>
 								<label>State/Territory*: </label>
