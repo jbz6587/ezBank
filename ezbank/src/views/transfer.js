@@ -3,7 +3,7 @@ import '../css/transfer.css';
 import {Link} from 'react-router-dom';
 import SiteNavbar from '../views/sitenavbar.js';
 import Scheduler from '../views/scheduler.js';
-import swal from 'sweetalert'
+import swal from 'sweetalert';
 
 export default class Transfer extends Component {
 	
@@ -82,7 +82,7 @@ export default class Transfer extends Component {
 				title: "Success",
 				text: "Transfer was successful!\n You will be redirected to the homepage in a moment.",
 				icon: "success",
-				timer: 2500,
+				timer: 3000,
 				buttons: false
 			}).then(() => {
 					window.location.href = "./home";

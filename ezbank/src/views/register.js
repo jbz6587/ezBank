@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../css/register.css';
 import LandingNavbar from '../views/landingnavbar.js';
+import swal from 'sweetalert';
 
 
 export default class Register extends Component {
@@ -19,10 +20,17 @@ export default class Register extends Component {
 			errorMessage += "Error: The Email and ConfirmEmail values do not match.\n";
 		}
 		if(errorMessage === ""){
-			alert("You have completed the account registration process successfully.\nYou will be redirected to the log-in page in a few seconds.");
-			setTimeout(function(){
-				window.location.href = "./";
-			}, 3000);
+			swal({
+				title: "Success",
+				text: "You have completed the account registration process successfully.\nYou will be redirected to the log-in page in a few seconds.",
+				icon: "success",
+				timer: 3000,
+				buttons: false
+			}).then(() => {
+					window.location.href = "./";
+				}
+			);
+			
 		}
 		else{
 			var errorDiv = document.getElementById("RegistrationErrorDiv");
