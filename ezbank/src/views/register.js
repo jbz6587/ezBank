@@ -19,7 +19,10 @@ export default class Register extends Component {
 			errorMessage += "Error: The Email and ConfirmEmail values do not match.\n";
 		}
 		if(errorMessage === ""){
-			window.location.href = "./registration-complete";
+			alert("You have completed the account registration process successfully.\nYou will be redirected to the log-in page in a few seconds.");
+			setTimeout(function(){
+				window.location.href = "./";
+			}, 3000);
 		}
 		else{
 			var errorDiv = document.getElementById("RegistrationErrorDiv");

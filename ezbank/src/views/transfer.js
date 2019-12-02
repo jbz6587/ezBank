@@ -48,16 +48,41 @@ export default class Transfer extends Component {
 
 	handleSubmit(event){
 		event.preventDefault();
-		console.log(this.state);
-		var from = parseFloat(this.state.fromAccount);
-		var to = parseFloat(this.state.toAccount);
+		var from = this.state.fromAccount;
+		var to = this.state.toAccount;
 		var amnt = parseFloat(this.state.amount);
-		if(amnt > from){
-			alert("Insufficient funds for this transaction.");
-		}else if(from == to){
-			alert("You cannot transfer to the same account.")
-		}else{
+		
+		var errorMessage = "";
+		
+		
+		
+		if (from === ""){
+			errorMessage += "You have not selected a 'From' account.\n";
+		}
+		if (to === "") {
+			errorMessage += "You have not selected a 'To' account.\n";
+		}
+		
+		if(from !== "" && to !== ""){
+			from = parseFloat(this.state.fromAccount);
+			to = parseFloat(this.state.toAccount);
+			
+			if (from === to){
+				errorMessage += "The accounts you are transferring from and to cannot be the same.\n";
+			}
+			if (amnt > from){
+				errorMessage += "The account you are trying to transfer from does not have sufficient funds to transfer the amount specified.\n";
+			}
+		}
+		
+		
+		if (errorMessage === "") {
 			alert("Transfer Successful");
+		}
+		else {
+			var errorDiv = document.getElementById("TransferErrorDiv");
+			errorDiv.innerText = errorMessage;
+			errorDiv.style.color = "red";
 		}
 	}
 	
@@ -71,6 +96,7 @@ export default class Transfer extends Component {
 					<div>
 						<h2>Make Transfer</h2>
 					</div>
+					<div id="TransferErrorDiv"></div>
 					<div>
 						<b><u>Select Accounts:</u></b>
 						<button id="scheduleTransferBtn" onClick={this.toggleSchedulerDialog}>Schedule Transfers</button>
