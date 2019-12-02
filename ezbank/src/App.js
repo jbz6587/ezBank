@@ -16,7 +16,6 @@ import Help from './views/help';
 import ProfileSettings from './views/profilesettings';
 import CreateTicket from './views/createsupportticket';
 import EmployeeDashboard from './views/employeeDashboard';
-import ConfirmRegistration from './views/confirmregistration';
 import ConfirmDeposit from './views/confirmdeposit';
 
 
@@ -37,7 +36,6 @@ function App() {
           			<Route path="/profilesettings" component={ProfileSettings}/>
 					<Route path="/create-support-ticket" component={CreateTicket}/>
 					<Route path="/employee-dashboard" component={EmployeeDashboard}/>
-					<Route path="/registration-complete" component={ConfirmRegistration}/>
 					<Route path="/deposit-complete" component={ConfirmDeposit}/>
 				</Router>
 			</div>
