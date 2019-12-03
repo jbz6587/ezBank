@@ -3,6 +3,7 @@ import '../css/deposit.css';
 import {Link} from 'react-router-dom';
 import SiteNavbar from '../views/sitenavbar.js';
 import ImageUploader from 'react-images-upload';
+import swal from 'sweetalert';
 
 export default class Deposit extends Component {
 
@@ -12,10 +13,24 @@ export default class Deposit extends Component {
          this.onDrop = this.onDrop.bind(this);
     }
  
-    onDrop(picture) {
-        this.setState({
-            pictures: this.state.pictures.concat(picture),
-        });
+    onDrop = (picture) => {
+		if(this.state.pictures.length !== 0 && picture.length !== 0){
+			//Prevent duplicate uploads. Does not solve underlying problem with react image uploader though.
+			var filteredArray = this.state.pictures.filter(pic => pic["name"] !== picture[0]["name"]);
+			
+			this.setState({
+				pictures: filteredArray,
+			}, () => {
+				this.setState({
+					pictures: this.state.pictures.concat(picture),
+				});
+			});
+		}
+		else {
+			this.setState({
+				pictures: this.state.pictures.concat(picture),
+			});
+		}
     }
 
 	handleDepositFormSubmit = (e) => {
@@ -37,7 +52,16 @@ export default class Deposit extends Component {
 			errorDiv.style.color = "red";
 		}
 		else {
-			window.location.href = "./deposit-complete";
+			swal({
+				title: "Success",
+				text: "Your check deposit has been processed successfully.\nYou will be returned to the home page in a few seconds.",
+				icon: "success",
+				timer: 3000,
+				buttons: false
+			}).then(() => {
+					window.location.href = "./home";
+				}
+			);
 		}
 	}
 
@@ -79,7 +103,7 @@ export default class Deposit extends Component {
 									<ImageUploader
 										className="imageUploader"
 										label="Max file size: 10mb, accepted: jpg, png"
-						                withIcon={true}
+						                withIcon={false}
 						                buttonText='Choose image'
 						                onChange={this.onDrop}
 						                imgExtension={['.jpg', '.png']}
@@ -93,7 +117,7 @@ export default class Deposit extends Component {
 						            <ImageUploader
 						            	className="imageUploader"
 										label="Max file size: 10mb, accepted: jpg, png"
-						                withIcon={true}
+						                withIcon={false}
 						                buttonText='Choose image'
 						                onChange={this.onDrop}
 						                imgExtension={['.jpg', '.png']}
