@@ -13,20 +13,22 @@
 	margin-left: 60px;
 }
 
-#divideLine {
-	width: 95%
-}
-
 #settingsContainer {
 	margin-left: 50px;
 }
 
 #notifContainer {
 	line-height: 10px;
+	width: 700px;
+	border-bottom: solid;
+	border-width: 1px;
 }
 
 #securityContainer {
 	line-height: 10px;
+	width: 700px;
+	border-bottom: solid;
+	border-width: 1px;
 }
 
 #securityButton {

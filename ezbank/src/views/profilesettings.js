@@ -57,16 +57,18 @@ export default class ProfileSettings extends Component {
 							<div>
 								<span className="SecrurityItems">
 								<div>
-									<p>2-Factor Authentication</p>
+									<b>2-Factor Authentication</b><br/><br/>
 										<input type="checkbox" value="phoneNotifs1"/>Phone: ***-6789<br/>
 										<input type="checkbox" value="phoneNotifs2"/>Email: ***Shmoe@mail.com
 								</div>
 								<div>
-									<p>Fingerprint Scanner</p>
-									<input type="checkbox" value="phoneNotifs1"/>Fingerprint1<br/>
+									<br/>
+									<b>Fingerprint Scanner</b><br/><br/>
+									<input type="checkbox" value="phoneNotifs1"/>Fingerprint1<br/><br/>
 								</div>
 								</span>
 								<button id="securityButton">Change Security Options</button><p id="instruction"> *requires password to be entered</p>
+								<br/>
 							</div>
 						</div>
 						<div>

@@ -66,7 +66,7 @@ export default class Register extends Component {
 								<label>Email*:</label> <input id="RegisterEmailInput" type="email" required/>
 								<br/><br/>
 								<label>Password*:</label> <input id="RegisterPWInput" type="password" required/>
-								<br/><br/><br/>
+								<br/><br/><br/><br/><br/>
 								<label>Date of Birth:</label> <input id="RegisterDoBInput" type="date"/>
 								<br/><br/>
 								<label>Home Address*:</label> <input id="RegisterAddressInput" required/>
@@ -85,6 +85,8 @@ export default class Register extends Component {
 								<label>Confirm Password*:</label> <input id="RegisterConfirmPWInput" type="password" required/>
 								<br/><br/><br/>
 								<label>Phone Number*:</label> <input id="RegisterPhoneInput" required/>
+								<br/><br/>
+								<label>City*:</label> <input id="RegisterCityInput" required/>
 								<br/><br/>
 								<label>Zip*:</label> <input id="RegisterZipInput" required/>
 								<br/><br/>
