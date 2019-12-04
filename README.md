@@ -1,9 +1,9 @@
-Team-3
-Jarrod Cummings
-Austin Wilder
-Joe Zell
-ez-Bank beta prototype
-11/17/19
+Team-3<br />
+Jarrod Cummings<br />
+Austin Wilder<br />
+Joe Zell<br />
+ez-Bank Final prototype<br />
+12/03/19<br />
 _________________________________________________________
 
 To run: prototype hosted on https://ezbank.netlify.com/
