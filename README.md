@@ -4,6 +4,7 @@ Austin Wilder<br />
 Joe Zell<br />
 ez-Bank Final prototype<br />
 12/03/19<br />
+Repository - https://github.com/jbz6587/ezBank<br />
 _________________________________________________________
 
 To run: prototype hosted on https://ezbank.netlify.com/<br />
