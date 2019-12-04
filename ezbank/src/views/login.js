@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../css/login.css';
 import LandingNavbar from '../views/landingnavbar.js';
+import swal from 'sweetalert';
 
 
 export default class Login extends Component {
@@ -34,7 +35,7 @@ export default class Login extends Component {
 		}else if(this.state.email === "user@ezbank.com" && this.state.password === "user"){
 			this.props.history.push('/home');
 		}else{
-			alert('Incorrect username or password');
+			swal("Login Failed","Incorrect Email or Password","error");
 		}
 	}
 
