@@ -19,7 +19,7 @@ username: admin@ezbank.com  -  passowrd: admin<br />
 
 _________________________________________________________
 
-Unsupported Features/Bugs
+Unsupported Features/Bugs<br />
 -Registering an account with the site does not create a physical account to sign in with, instead use the<br />
  credentials given above for signing in.<br />
 -Transfering or depositing money does not add or remove money from the accounts at the homepage.<br />
